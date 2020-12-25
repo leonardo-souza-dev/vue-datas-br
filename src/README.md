@@ -17,7 +17,7 @@ https://github.com/ltreze/vue-datas-br
 Fri Dec 25 2020 00:00:00 GMT-0300 (Brasilia Standard Time)
 
 ```
-this.$converterDataYYYYMMDD(dataYYYYMMDD)
+$converterDataYYYYMMDD(dataYYYYMMDD)
 ```
 
 ```
