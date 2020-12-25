@@ -39,7 +39,7 @@ new Vue({
 <template>
   <div id="app">
     <p>{{ dataYYYYMMDD }}</p>
-    <p>{{ this.converter(dataYYYYMMDD) }}</p>
+    <p>{{ this.$converterDataYYYYMMDD(dataYYYYMMDD) }}</p>
   </div>
 </template>
 
@@ -49,11 +49,6 @@ export default {
   data () {
     return {
       dataYYYYMMDD: '2020-12-25'
-    }
-  },
-  methods: {
-    converter(data){
-      return this.$converterDataYYYYMMDD(data)
     }
   }
 }
