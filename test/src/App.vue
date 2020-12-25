@@ -1,10 +1,18 @@
 <template>
   <div id="app">
+    <h1><pre>this.$converterData(dataYYYY_MM_DD)</pre></h1>
     <h3>{{ dataYYYY_MM_DD }}</h3>
     <p>{{ this.$converterData(dataYYYY_MM_DD) }}</p>
     <hr />
+
+    <h1><pre>this.$converterData(dataYYYY_MM_DDTHH_MM_SS)</pre></h1>
     <h3>{{ dataYYYY_MM_DDTHH_MM_SS }}</h3>
     <p>{{ this.$converterData(dataYYYY_MM_DDTHH_MM_SS) }}</p>
+    <hr />
+
+    <h1><pre>this.$converterDeYYYY_MM_DDParaDataISOShort(dataYYYY_MM_DD)</pre></h1>
+    <h3>{{ dataYYYY_MM_DD }}</h3>
+    <p>{{ this.$converterDeYYYY_MM_DDParaDataISOShort(dataYYYY_MM_DD) }}</p>
   </div>
 </template>
 
