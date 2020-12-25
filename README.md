@@ -1,6 +1,10 @@
 # vue-datas-br
 
-> A Vue.js project
+> Pacote NPM para ajudar a formatar datas usando Vue.js
+
+## npm
+
+https://www.npmjs.com/package/vue-datas-br
 
 ## Exemplo 
 
