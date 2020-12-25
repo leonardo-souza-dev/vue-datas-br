@@ -17,7 +17,22 @@ https://github.com/ltreze/vue-datas-br
 Fri Dec 25 2020 00:00:00 GMT-0300 (Brasilia Standard Time)
 
 ```
-$converterDataYYYYMMDD(dataYYYYMMDD)
+this.$converterDataYYYYMMDD(dataYYYYMMDD)
+```
+
+====
+
+```
+import Vue from 'vue'
+import App from './App.vue'
+import VueDatasBr from 'vue-datas-br'
+
+Vue.use(VueDatasBr)
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
 ```
 
 ```
