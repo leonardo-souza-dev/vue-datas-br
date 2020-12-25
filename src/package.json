@@ -1,8 +1,8 @@
 {
   "name": "vue-datas-br",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
-  "author": "Leonardo Souza",
+  "author": "Leonardo Souza <leonardotreze@gmail.com>",
   "license": "ISC",
   "description": "Helper para datas em javascript",
   "keywords": [
