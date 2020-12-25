@@ -1,17 +1,29 @@
 'use-strict'
 
 var DatasBr = {
-  converterDataYYYYMMDD: function(dataYYYYMMDD){
-  if (dataYYYYMMDD === undefined) {
-    throw "dataYYYYMMDD é undefined"
-  }
+  converterData: function(data){
+    if (data === undefined) {
+      throw "data é undefined"
+    }
 
-  const dataSplitada = dataYYYYMMDD.split('-')
-  const ano = dataSplitada[0]
-  const mes = dataSplitada[1]
-  const dia = dataSplitada[2]
- 
-  return new Date(ano, mes - 1, dia)
+    if (data.indexOf('T') > -1) {    
+      let dataSplitada = data.split('T')
+
+      dataSplitada = dataSplitada[0].split('-')
+      const ano = dataSplitada[0]
+      const mesIndice = Number(dataSplitada[1]) - 1
+      const dia = dataSplitada[2]
+
+      return new Date(ano, mesIndice, dia)
+    } else if (data.indexOf('-') > -1) {
+
+      const dataSplitada = data.split('-')
+      const ano = dataSplitada[0]
+      const mesIndice = Number(dataSplitada[1]) - 1
+      const dia = dataSplitada[2]
+
+      return new Date(ano, mesIndice, dia)
+    }
   }
 }
 
@@ -19,9 +31,9 @@ function plugin(Vue){
   Vue.DatasBr = DatasBr
 
    Object.defineProperties(Vue.prototype, {
-     $converterDataYYYYMMDD: {
+     $converterData: {
        get: function get(){
-         return DatasBr.converterDataYYYYMMDD
+         return DatasBr.converterData
        }
      }
    })
