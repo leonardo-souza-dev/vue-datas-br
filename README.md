@@ -6,6 +6,10 @@
 
 https://www.npmjs.com/package/vue-datas-br
 
+## github
+
+https://github.com/ltreze/vue-datas-br
+
 ## Exemplo 
 
 2020-12-25
