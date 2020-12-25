@@ -1,0 +1,16 @@
+{
+  "name": "vue-datas-br",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Leonardo Souza",
+  "license": "ISC",
+  "description": "Ajudador para datas em javascript",
+  "keywords": [
+    "vue",
+    "data",
+    "js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
