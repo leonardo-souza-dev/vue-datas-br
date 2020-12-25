@@ -20,6 +20,21 @@ Fri Dec 25 2020 00:00:00 GMT-0300 (Brasilia Standard Time)
 this.$converterDataYYYYMMDD(dataYYYYMMDD)
 ```
 
+====
+
+```
+import Vue from 'vue'
+import App from './App.vue'
+import VueDatasBr from 'vue-datas-br'
+
+Vue.use(VueDatasBr)
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
+```
+
 ```
 <template>
   <div id="app">
