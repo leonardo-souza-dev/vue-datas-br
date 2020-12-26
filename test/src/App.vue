@@ -13,6 +13,10 @@
     <h1><pre>this.$converterDeYYYY_MM_DDParaDataISOShort(dataYYYY_MM_DD)</pre></h1>
     <h3>{{ dataYYYY_MM_DD }}</h3>
     <p>{{ this.$converterDeYYYY_MM_DDParaDataISOShort(dataYYYY_MM_DD) }}</p>
+
+    <h1><pre>this.$obterNumeroSemana(new Date())</pre></h1>
+    <h3>{{ new Date() }}</h3>
+    <p>{{ this.$obterNumeroSemana(new Date()) }}</p>
   </div>
 </template>
 
