@@ -26,9 +26,25 @@ var DatasBr = {
     //Source: https://weeknumber.net/how-to/javascript
     var date = new Date(data.getTime())
     date.setHours(0, 0, 0, 0)
-    date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7)
-    var week1 = new Date(date.getFullYear(), 0, 4)
-    return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7)
+
+    var week1 = new Date(date.getFullYear(), 0, 1)
+
+    var dateGetTime = date.getTime()
+    var week1GetTime = week1.getTime()
+    var diff1 = dateGetTime - week1GetTime
+    var div1 = diff1 / 86400000
+
+    var diff2 = div1 + 1
+    var week1GetDay = week1.getDay()
+
+    var d6 = week1GetDay + 6
+    var resto = d6 % 7
+
+    var calc = ((diff2 + resto) / 7 ) | 0
+
+    var numero = 1 + Math.round(calc)
+    
+    return numero
   },
   _converterDeYYYY_MM_DD: function(data){
     return DatasBr._comum(data.split('T')[0].split('-'))
